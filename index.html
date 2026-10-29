@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1b2b">
+  <title>Pit Stop da Qualidade e Segurança — Milhão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" id="brandHome" aria-label="Voltar ao início">
+      <span class="brand-mark">✚</span><span><strong>PIT STOP</strong><small>QUALIDADE • SEGURANÇA • MILHÃO</small></span>
+    </a>
+    <nav class="top-actions">
+      <button class="btn btn-ghost" id="navRanking">🏆 Ranking</button>
+      <button class="btn btn-ghost" id="navHome">⌂ Início</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="homeScreen" class="screen">
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow challenge-eyebrow"><button class="pulse team-trigger" id="teamTrigger" type="button" aria-label="Conheça nossa equipe SESMIT" aria-expanded="false" aria-controls="teamPopover" title="Nossa equipe"></button> DESAFIO CORPORATIVO • MILHÃO
+            <span class="team-popover hidden" id="teamPopover" role="dialog" aria-label="Nossa equipe SESMIT">
+              <span class="team-popover-title">NOSSA EQUIPE <strong>SESMT</strong></span>
+              <span class="team-members">
+                <span>Agnaldo Júnior</span><span>Johny Lopes</span><span>Murillo Rodrigues</span>
+                <span>Danilo Borges</span><span>Rodrigo Melo</span><span>Matheus Martins</span><span>Doutor Leandro</span>
+              </span>
+            </span>
+          </span>
+          <h1>Pit Stop da <em class="quality-word">Qualidade</em> e <em class="safety-word">Segurança</em></h1>
+          <p class="hero-sub">Qualidade em laranja. Segurança em verde. Decisões conscientes em cada etapa.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-large" id="startButton">▶ Entrar no desafio</button>
+            <button class="btn btn-outline btn-large" id="heroRanking">🏆 Ver ranking</button>
+          </div>
+          <div class="stats-strip">
+            <div><strong>100</strong><span>perguntas</span></div>
+            <div><strong>25s</strong><span>por pergunta</span></div>
+            <div><strong>3</strong><span>níveis</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="shield">✓</div><span class="floating f1">🦺</span><span class="floating f2">⚙️</span><span class="floating f3">＋</span>
+          <div class="art-label"><span class="status-dot"></span> PREVENÇÃO ATIVA</div>
+        </div>
+      </div>
+
+      <section class="tribute panel">
+        <div class="tribute-icon">🛡️</div>
+        <div><span class="eyebrow">NOSSO COMPROMISSO</span>
+          <h2>Pit Stop da Qualidade e Segurança — Milhão</h2>
+          <p>“Nossa homenagem a todos os colaboradores que fazem da segurança, da saúde e da qualidade um compromisso diário. Cada atitude preventiva protege vidas, fortalece nossa equipe e contribui para a excelência dos nossos resultados. Na Milhão, segurança não é apenas uma regra: é responsabilidade de todos. Pare, pense, previna e siga com segurança!”</p>
+        </div>
+      </section>
+
+      <section class="home-lower">
+        <div class="panel intro-panel">
+          <span class="eyebrow">COMO FUNCIONA</span><h2>Uma casa por vez. Qualidade e segurança em cada atitude.</h2>
+          <div class="steps">
+            <div><span>01</span><b>Cadastre-se</b><small>Informe nome, setor e avatar.</small></div>
+            <div><span>02</span><b>Escolha uma casa</b><small>Responda à pergunta em até 25 segundos.</small></div>
+            <div><span>03</span><b>Some pontos</b><small>Acertos valem de 10 a 30 pontos.</small></div>
+          </div>
+          <p class="fine-print">A resposta errada ou o tempo esgotado elimina o participante da rodada. Seu progresso fica salvo neste navegador.</p>
+        </div>
+        <div class="panel quick-ranking">
+          <div class="section-heading"><div><span class="eyebrow">PLACAR AO VIVO</span><h2>Top participantes</h2></div><button class="text-btn" id="quickSeeAll">Ver todos →</button></div>
+          <div id="quickRankingList" class="quick-list"><p class="muted">Ainda não há participantes. Seja o primeiro!</p></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="registerScreen" class="screen hidden">
+      <div class="page-heading"><span class="eyebrow">IDENTIFICAÇÃO DO PARTICIPANTE</span><h1>Pronto para o desafio?</h1><p>Seu progresso será salvo neste navegador.</p></div>
+      <form id="registerForm" class="panel register-panel">
+        <label for="participantName">Nome completo</label><input id="participantName" name="name" maxlength="70" required placeholder="Digite seu nome">
+        <label for="participantSector">Setor</label><input id="participantSector" name="sector" maxlength="70" required placeholder="Ex.: Produção, Qualidade, Logística">
+        <span class="form-label">Escolha seu avatar</span>
+        <div id="avatarChoices" class="avatar-choices">
+          <label class="avatar-choice selected"><input type="radio" name="avatar" value="👷" checked><span>👷</span><small>Capacete</small></label>
+          <label class="avatar-choice selected"><input type="radio" name="avatar" value="👷‍♀️" checked><span>👷‍♀️</span><small>Capacete</small></label>
+          <label class="avatar-choice"><input type="radio" name="avatar" value="⛑️"><span>⛑️</span><small>Proteção</small></label>
+          <label class="avatar-choice"><input type="radio" name="avatar" value="🚧"><span>🚧</span><small>Sinalização</small></label>
+          <label class="avatar-choice"><input type="radio" name="avatar" value="🏗️"><span>🏗️</span><small>Indústria</small></label>
+          <label class="avatar-choice"><input type="radio" name="avatar" value="🧤"><span>🧤</span><small>EPI</small></label>
+        </div>
+        <div class="form-note">Se você já tiver uma partida em andamento com esse nome e setor, poderá continuar nela. Participantes eliminados não podem retomar a rodada.</div>
+        <button class="btn btn-primary btn-large full-width" type="submit">Continuar para o tabuleiro →</button>
+        <button class="btn btn-ghost full-width" type="button" id="registerCancel">Voltar ao início</button>
+      </form>
+    </section>
+
+    <section id="gameScreen" class="screen hidden">
+      <div class="game-header">
+        <div><span class="eyebrow">PIT STOP • SUA RODADA</span><h1>Tabuleiro de desafio</h1><p id="playerLine" class="muted"></p></div>
+        <div class="game-header-actions"><button class="btn btn-outline" id="gameRanking">🏆 Ranking</button><button class="btn btn-ghost" id="switchParticipant">Trocar participante</button></div>
+      </div>
+      <div class="metrics">
+        <div class="metric"><span>⭐ Pontuação</span><strong id="scoreValue">0</strong><small>pontos</small></div>
+        <div class="metric"><span>✓ Acertos</span><strong id="correctValue">0</strong><small>respostas corretas</small></div>
+        <div class="metric"><span>▦ Respondidas</span><strong id="answeredValue">0/100</strong><small>perguntas respondidas</small></div>
+        <div class="metric"><span>↗ Progresso</span><strong id="progressValue">0%</strong><div class="progress-track"><span id="progressBar"></span></div></div>
+      </div>
+      <div id="eliminationBanner" class="notice notice-danger hidden"></div>
+      <div id="completionBanner" class="notice notice-success hidden"></div>
+      <section class="panel board-panel">
+        <div class="section-heading board-heading"><div><span class="eyebrow">SELECIONE UMA CASA DISPONÍVEL</span><h2>Tabuleiro <span class="accent">1-100</span></h2></div><div class="legend"><span><i class="legend-dot available"></i>Disponível</span><span><i class="legend-dot won"></i>Acerto</span><span><i class="legend-dot lost"></i>Erro</span><span><i class="legend-dot locked"></i>Bloqueada</span></div></div>
+        <div id="gameBoard" class="game-board" aria-label="Tabuleiro de 100 casas"></div>
+        <p class="board-hint">Cada casa tem uma pergunta própria. A ordem é individual e permanece salva nesta rodada.</p>
+      </section>
+    </section>
+
+    <section id="questionScreen" class="screen hidden">
+      <div class="question-top"><button class="btn btn-ghost" id="backToBoard">← Voltar ao tabuleiro</button><span class="question-count" id="questionCount">CASA 01 / 100</span></div>
+      <div class="question-layout">
+        <section class="panel question-card">
+          <div class="question-meta"><span id="questionCategory" class="category-tag">EPI</span><span id="questionDifficulty" class="difficulty-tag">FÁCIL • 10 PONTOS</span></div>
+          <h1 id="questionText">Pergunta</h1>
+          <div id="answerOptions" class="answer-options"></div>
+          <div id="answerFeedback" class="answer-feedback hidden" aria-live="polite"></div>
+          <button class="btn btn-primary btn-large full-width hidden" id="continueButton">Voltar ao tabuleiro →</button>
+        </section>
+        <aside class="panel timer-card">
+          <span class="eyebrow">TEMPO RESTANTE</span><div id="timerRing" class="timer-ring"><strong id="timerValue">12</strong><span>segundos</span></div>
+          <div class="timer-note" id="timerNote">Responda com atenção e segurança.</div>
+          <div class="divider"></div><div class="points-callout"><span>VALOR DA CASA</span><strong id="questionPoints">10 <small>PTS</small></strong></div>
+          <label class="toggle-row"><input id="timerToggle" type="checkbox" checked><span>Ativar cronômetro</span></label>
+          <p class="fine-print">Com o cronômetro ativo, o limite é de 25 segundos. Ao errar ou estourar o tempo, a rodada é encerrada.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="rankingScreen" class="screen hidden">
+      <div class="page-heading ranking-heading"><div><span class="eyebrow">PLACAR GERAL</span><h1>🏆 Ranking dos participantes</h1><p>Atualizado automaticamente a cada resposta.</p></div><button class="btn btn-ghost" id="rankingBack">← Voltar</button></div>
+      <div class="panel ranking-panel">
+        <div class="ranking-toolbar"><span id="rankingCount">0 participantes</span><button class="btn btn-danger-outline" id="resetRanking">Zerar ranking</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Pos.</th><th>Participante</th><th>Setor</th><th>Pontos</th><th>Acertos</th><th>Respondidas</th><th>Situação</th></tr></thead><tbody id="rankingBody"><tr><td colspan="7" class="empty-cell">Ainda não há resultados.</td></tr></tbody></table></div>
+        <p class="fine-print">Os resultados são armazenados somente no localStorage deste navegador e dispositivo. Para um placar compartilhado entre diferentes dispositivos seria necessário um serviço central, que este projeto não utiliza.</p>
+      </div>
+    </section>
+  </main>
+  <footer><span>✚ MILHÃO • PIT STOP SST</span><span>Prevenir é o melhor caminho.</span></footer>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
